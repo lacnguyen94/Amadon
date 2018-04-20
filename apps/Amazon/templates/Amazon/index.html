@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <head>
+        <title>Amadon</title>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+    <h1>Amadon Store!</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dojo Tshirt</td>
+                <td>$19.99</td>
+                <form action='buy' method='post'>
+                     {% csrf_token %}
+                    <td><select name='quantity'>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                    </select></td>
+                    <td>
+                        <input type="hidden" name="product_id" value='1001'>
+                        <input type="submit" name="submit" value="Buy!">
+                    </td>
+                </form>
+            </tr>
+            <tr>
+                <td>Dojo Sweater</td>
+                <td>$24.99</td>
+                <form action='buy' method='post'>
+                     {% csrf_token %}
+                    <td><select name='quantity'>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                    </select></td>
+                    <td>
+                        <input type="hidden" name="product_id" value='1002'>
+                        <input type="submit" name="submit" value="Buy!">
+                    </td>
+                </form>
+            </tr>
+            <tr>
+                <td>Dojo Cup</td>
+                <td>$4.99</td>
+                <form action='buy' method='post'>
+                     {% csrf_token %}
+                    <td><select name='quantity'>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                    </select></td>
+                    <td>
+                        <input type="hidden" name="product_id" value='1003'>
+                        <input type="submit" name="submit" value="Buy!">
+                    </td>
+                </form>
+            </tr>
+            <tr>
+                <td>Algorithm Book</td>
+                <td>$49.99</td>
+                <form action='buy' method='post'>
+                     {% csrf_token %}
+                    <td><select name='quantity'>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                    </select></td>
+                    <td>
+                        <input type="hidden" name="product_id" value='1004'>
+                        <input type="submit" name="submit" value="Buy!">
+                    </td>
+                </form>
+            </tr>
+        </tbody>
+    </table>
+    </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>
